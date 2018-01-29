@@ -1,0 +1,14 @@
+#main-div{
+  display: flex;
+  flex-direction: column;
+}
+
+#to-dos{
+  display: flex;
+  flex-direction: row;
+}
+
+#week-and-days{
+  display: flex;
+  flex-direction: row;
+}
