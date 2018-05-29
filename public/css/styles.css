@@ -29,11 +29,13 @@
   justify-content: space-between;
 }
 
-#weekday {
+#weekday-div {
   width: 15%;
+  display: flex;
+  justify-content: center;
 }
 
-#week-focus, #weekday, #to-dos, #personal-todo, #work-todo {
+#week-focus, #weekday-div, #to-dos, #personal-todo, #work-todo {
   border: 1px solid black;
 }
 
