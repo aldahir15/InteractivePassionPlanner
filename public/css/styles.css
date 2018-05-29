@@ -1,14 +1,35 @@
 #main-div{
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 #to-dos{
   display: flex;
   flex-direction: row;
+  height: 20%;
+  width: 100%;
+}
+
+#personal-todo, #work-todo {
+  width: 50%;
 }
 
 #week-and-days{
   display: flex;
   flex-direction: row;
+  /* GET RID OF */
+  border: 1px solid black;
+  /* GET RID OF */
+  height: 60%;
+  justify-content: space-between;
 }
+
+#weekday {
+  width: 15%;
+}
+
+#week-focus, #weekday, #to-dos, #personal-todo, #work-todo {
+  border: 1px solid black;
+}
+
