@@ -12,6 +12,10 @@
 }
 
 #personal-todo, #work-todo {
+  width: 25%;
+}
+
+#freestyle {
   width: 50%;
 }
 
