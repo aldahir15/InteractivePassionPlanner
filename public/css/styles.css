@@ -40,6 +40,48 @@
   border: 1px solid black;
 }
 
+#week-focus {
+  width: 270px;
+}
+
 h4 {
   margin: 0px;
+}
+
+#week-of{
+  position: relative;
+  left: -85px;
+  top: -60px;
+  transform: rotate(270deg);
+}
+
+#day-today{
+  font-weight: 900;
+  padding-bottom: 10px;
+  position: relative;
+  top: -20px;
+  right: -40px;
+}
+
+#week-of-container{
+  margin: 5px;
+  border: 1px solid black;
+}
+
+#focus-for-week, #good-things-that-happened, #motivational-quote{
+  border: 1px solid black;
+  margin: 5px;
+}
+
+#focus-for-week h4, #good-things-that-happened h4, #motivational-quote h4{
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: center;
+}
+
+#focus-for-week textarea, #good-things-that-happened textarea, #motivational-quote textarea{
+  border: transparent;
+  height: 100px;
+  width: 97.3%;
 }
