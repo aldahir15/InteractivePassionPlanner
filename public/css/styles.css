@@ -31,11 +31,15 @@
 
 #weekday-div {
   width: 15%;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
+  justify-content: space-evenly;
 }
 
 #week-focus, #weekday-div, #to-dos, #personal-todo, #work-todo {
   border: 1px solid black;
 }
 
+h4 {
+  margin: 0px;
+}

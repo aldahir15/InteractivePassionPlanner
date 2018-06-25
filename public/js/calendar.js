@@ -36,6 +36,7 @@ for (let i = 0; weekdays_moment[weekdays_moment.length - 1] !== end_Date; i++) {
 }
 
 weekdays.forEach((day, i) => {
+    console.log(day.innerHTML);
     day.innerHTML = weekdays_moment[i];
 })
 
@@ -46,7 +47,7 @@ weekdays.forEach((day, i) => {
 
 weekdays.forEach((day, i) => {
     if (day.innerHTML === `${moment().format("MMMM Do")}`) {
-        day.parentNode.style.backgroundColor = "#d3d3d3";
+      day.parentNode.style.backgroundColor = "#d3d3d3";
     } 
 });
 
