@@ -19,7 +19,7 @@ today.innerHTML = `${start_date} - ${end_Date}`;
 
 /** FINDING OUT RANGES FOR WEEK **/
 
-/** IPUTTING DATES INDIVIDUALLY **/
+/** PUTTING DATES INDIVIDUALLY **/
 
 const weekdays = document.querySelectorAll("#weekday");
 
@@ -37,7 +37,7 @@ weekdays.forEach((day, i) => {
     day.innerHTML = weekdays_moment[i];
 })
 
-/** IPUTTING DATES INDIVIDUALLY **/
+/** PUTTING DATES INDIVIDUALLY **/
 
 
 
