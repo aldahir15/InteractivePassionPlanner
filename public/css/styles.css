@@ -27,6 +27,7 @@
   /* GET RID OF */
   height: 60%;
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 #weekday-div {
@@ -34,13 +35,15 @@
   /* display: flex;
   justify-content: center; */
   justify-content: space-evenly;
+  /* border: 1px solid black; */
+  margin: 0 2px;
 }
 /* 
 #week-focus, #weekday-div, #to-dos, #personal-todo, #work-todo {
   border: 1px solid black;
 } */
 
-#weekday-div, #personal-todo, #work-todo, #freestyle {
+#personal-todo, #work-todo, #freestyle {
   border: 1px solid black;
 }
 
@@ -55,9 +58,13 @@ h4 {
   margin: 0px;
 }
 
+#week-of-div {
+  transform: scale(0.8);
+}
+
 #week-of{
   position: relative;
-  left: -85px;
+  left: -110px;
   top: -60px;
   transform: rotate(270deg);
 }
@@ -66,11 +73,13 @@ h4 {
   font-weight: 900;
   padding-bottom: 10px;
   position: relative;
-  top: -20px;
-  right: -40px;
+  top: -27px;
+  right: -55px;
+  font-size: 22px;
 }
 
 #week-of-container{
+  height: 70px;
   margin: 5px;
   border: 1px solid black;
 }
@@ -120,8 +129,10 @@ textarea {
 }
 
 #weekday-today-focus {
+  margin-top: 4px;
   border: 1px solid black;
   height: 7%;
+  background-color: white;
 }
 
 #today-focus-1 {
@@ -144,4 +155,16 @@ textarea {
   top: -95px;
   left: 30px;
   resize: none;
+  border-color: transparent;
+}
+
+#hour-container-list {
+  margin-top: 5px;
+  list-style: none;
+  padding-left: 4px;
+}
+
+#hour-container-list li {
+  font-size: 72%;
+  padding-bottom:2px;
 }
