@@ -40,29 +40,49 @@ weekdays.forEach((day, i) => {
 /** IPUTTING DATES INDIVIDUALLY **/
 
 
-/** DISPLAYING WHAT DAY TODAY IS*/
-
-weekdays.forEach((day, i) => {
-    if (day.innerHTML === `${moment().format("MM/D")}`) {
-        day.parentNode.parentNode.style.backgroundColor = "rgb(132, 132, 132)";
-    } 
-});
-
-/** DISPLAYING WHAT DAY TODAY IS*/
 
 /** DISPLAYING EACH INDIVIDUAL HOUR*/
 
 const DAYTIME = ["6:00", "6:30", "7:00", "7:30", "8:00", "8:30", "9:00", "9:30", 
-    "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "1:00", "1:30", "2:00", "2:30", 
-    "3:00", "3:30", "4:00", "4:30", "5:00", "5:30", "6:00", "6:30", "7:00", "7:30", 
-    "8:00", "8:30", "9:00", "9:30", "10:00", "10:30"];
+"10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "1:00", "1:30", "2:00", "2:30", 
+"3:00", "3:30", "4:00", "4:30", "5:00", "5:30", "6:00", "6:30", "7:00", "7:30", 
+"8:00", "8:30", "9:00", "9:30", "10:00", "10:30"];
 
 weekdays.forEach((day, i) => {
     let hour_container = day.parentNode.parentNode.querySelector("#hour-container-list");
     DAYTIME.forEach((x) => {
         const newNode = document.createElement("LI");
+        const newPNode = document.createElement("P");
         const textNode = document.createTextNode(x);
-        newNode.appendChild(textNode);
+        const textAreaNode = document.createElement("TEXTAREA");
+        newPNode.appendChild(textNode);
+        newNode.appendChild(newPNode);
+        newNode.appendChild(textAreaNode);
+        if (x === "12:00") {
+            newNode.style.backgroundColor = "rgb(132, 132, 132)";
+            textAreaNode.style.backgroundColor = "rgb(132, 132, 132)";
+        }
         hour_container.appendChild(newNode); 
     })
 });
+
+/** DISPLAYING EACH INDIVIDUAL HOUR*/
+
+
+/** DISPLAYING WHAT DAY TODAY IS*/
+
+weekdays.forEach((day, i) => {
+    if (day.innerHTML === `${moment().format("MM/D")}`) {
+        // day.parentNode.parentNode.style.backgroundColor = "rgb(132, 132, 132)";
+        let hour_container = day.parentNode.parentNode.querySelector("#hour-container-list");
+        hour_container.style.backgroundColor = "#ececec";
+        let textAreaNodes = hour_container.querySelectorAll('textarea');
+        textAreaNodes.forEach((node) => {
+        if (node.previousSibling.innerHTML !== "12:00") {
+            node.style.backgroundColor = "#ececec"
+        }
+        });
+    } 
+});
+
+/** DISPLAYING WHAT DAY TODAY IS*/

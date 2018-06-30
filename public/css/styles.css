@@ -1,3 +1,7 @@
+body {
+  font-family: sans-serif;
+}
+
 #main-div{
   display: flex;
   flex-direction: column;
@@ -27,7 +31,7 @@
   /* GET RID OF */
   height: 60%;
   justify-content: space-between;
-  padding-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 #weekday-div {
@@ -138,14 +142,14 @@ textarea {
 #today-focus-1 {
   transform: rotate(270deg);
   position: relative;
-  top: -92px;
+  top: -90px;
   left: -90px;
 }
 
 #today-focus-2 {
   transform: rotate(270deg);
   position: relative;
-  top: -135px;
+  top: -131px;
   left: -80px;
 }
 
@@ -167,4 +171,18 @@ textarea {
 #hour-container-list li {
   font-size: 72%;
   padding-bottom:2px;
+  display: flex;
+  height: 13.2px;
+  border-bottom: 1px solid black;
+  justify-content: space-between;
+}
+
+#hour-container-list p {
+  margin: 0;
+}
+
+#hour-container-list textarea {
+  border: 0;
+  resize: none;
+  width: 83%;
 }
