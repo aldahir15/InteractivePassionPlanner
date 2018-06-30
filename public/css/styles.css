@@ -112,18 +112,18 @@ textarea {
 
 #weekday-gray {
   display: flex;
-  background-color: lightgray;
+  background-color: #898c8f;
   color: white;
   justify-content: space-between;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 #weekday-gray h4 {
-  padding: 9px 5px 9px 5px;
+  padding: 9px 3px 9px 3px;
   margin: 4px 5px 4px 0;
   background-color: white;
   color: black;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   
 }
 
@@ -134,7 +134,7 @@ textarea {
 
 #weekday-today-focus {
   margin-top: 4px;
-  border: 1px solid black;
+  border: 0.5px solid gray;
   height: 7%;
   background-color: white;
 }
@@ -170,21 +170,26 @@ textarea {
 
 #hour-container-list li {
   font-size: 72%;
-  padding-bottom:2px;
+  padding-top: 2px;
   display: flex;
   height: 13.2px;
-  border-bottom: 1px solid black;
+  border-bottom: 0.8px solid gray;
   justify-content: space-between;
 }
 
 #hour-container-list p {
   margin: 0;
+  background-color: #e1e2e4;
+  width: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 #hour-container-list textarea {
   border: 0;
   resize: none;
   width: 83%;
+  padding: 0;
 }
 
 #top-priority-container-list li, #priority-container-list li, #errands-container-list li{
@@ -192,6 +197,7 @@ textarea {
   border-bottom: 0;
   list-style: none;
   height: 15.5px;
+  display: flex;
 }
 
 #top-priority-container-list li:last-child, #priority-container-list li:last-child, #errands-container-list li:last-child{
@@ -229,4 +235,21 @@ textarea {
   transform: rotate(270deg);
   font-size: 7px;
   margin: 0;
+}
+
+#top-priority-container-list textarea, #priority-container-list textarea, #errands-container-list textarea {
+  display: flex; 
+  height: 15px;
+  width: 95%;
+  resize: none;
+  border: 0;
+  padding: 0;
+  padding-left: 4px;
+}
+
+#first-priority-textarea {
+  width: 7% !important;
+  border-right: 1px solid black !important;
+  text-align: center;
+  padding-left: 0 !important;
 }

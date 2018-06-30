@@ -43,7 +43,7 @@ weekdays.forEach((day, i) => {
 
 /** DISPLAYING EACH INDIVIDUAL HOUR*/
 
-const DAYTIME = ["6:00", "6:30", "7:00", "7:30", "8:00", "8:30", "9:00", "9:30", 
+const DAYTIME = ["6:00", "6:30", "7:00", "7:30", "8:00", "8:30", "9:00", " 9:30", 
 "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "1:00", "1:30", "2:00", "2:30", 
 "3:00", "3:30", "4:00", "4:30", "5:00", "5:30", "6:00", "6:30", "7:00", "7:30", 
 "8:00", "8:30", "9:00", "9:30", "10:00", "10:30"];
@@ -59,8 +59,8 @@ weekdays.forEach((day, i) => {
         newNode.appendChild(newPNode);
         newNode.appendChild(textAreaNode);
         if (x === "12:00") {
-            newNode.style.backgroundColor = "rgb(132, 132, 132)";
-            textAreaNode.style.backgroundColor = "rgb(132, 132, 132)";
+            newNode.style.backgroundColor = "#f2f3f4";
+            textAreaNode.style.backgroundColor = "#f2f3f4";
         }
         hour_container.appendChild(newNode); 
     })
