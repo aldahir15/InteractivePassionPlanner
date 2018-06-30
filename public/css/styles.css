@@ -189,8 +189,13 @@ textarea {
 
 #top-priority-container-list li, #priority-container-list li, #errands-container-list li{
   border: 1px solid black;
+  border-bottom: 0;
   list-style: none;
   height: 15.5px;
+}
+
+#top-priority-container-list li:last-child, #priority-container-list li:last-child, #errands-container-list li:last-child{
+  border-bottom: 1px solid black;
 }
 
 #top-priority-container-list, #priority-container-list, #errands-container-list{
