@@ -8,14 +8,12 @@ body.style.height = `${screen.height}px`;
 
 const today = document.querySelector('#day-today');
 
-const start_date = date
-    .startOf("isoweek")
-    .format("MMMM Do");
+const start_date = date.startOf("isoweek").format("MM/D");
 
 const end_Date = date
   .startOf("isoweek")
   .add("days", 6)
-  .format("MMMM Do");
+  .format("MM/D");
 
 today.innerHTML = `${start_date} - ${end_Date}`;
 
@@ -28,7 +26,7 @@ const weekdays = document.querySelectorAll("#weekday");
 const weekdays_moment = [];
 
 function weekday_start_date(day = 0) {
-    return date.startOf("isoweek").add("days", day).format("MMMM Do");
+    return date.startOf("isoweek").add("days", day).format("MM/D");
 }
 
 for (let i = 0; weekdays_moment[weekdays_moment.length - 1] !== end_Date; i++) {
@@ -46,8 +44,8 @@ weekdays.forEach((day, i) => {
 /** DISPLAYING WHAT DAY TODAY IS*/
 
 weekdays.forEach((day, i) => {
-    if (day.innerHTML === `${moment().format("MMMM Do")}`) {
-      day.parentNode.style.backgroundColor = "#d3d3d3";
+    if (day.innerHTML === `${moment().format("MM/D")}`) {
+        day.parentNode.parentNode.style.backgroundColor = "rgb(132, 132, 132)";
     } 
 });
 
